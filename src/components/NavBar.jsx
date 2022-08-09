@@ -1,0 +1,73 @@
+import React, { Component } from "react";
+
+export default class NavBar extends Component {
+  render() {
+    return (
+      <nav className="px-11 sm:px-4 py-4 bg-black">
+        <div className="flex flex-wrap justify-between items-center mx-20">
+          <p className="flex items-center">
+            <span className="self-center text-2xl font-mono whitespace-nowrap text-white">
+              M. Mughal
+            </span>
+          </p>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span className="sr-only">Open main menu</span>
+            <svg
+              className="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clipRule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul className="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:font-medium md:border-0 font-mono">
+              <li>
+                <a
+                  href="#"
+                  className="block text-white text-lg md:bg-transparent md:p-0 dark:text-white hover:text-red-700"
+                  aria-current="page"
+                >
+                  <span className="text-red-700">01. </span>About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block pr-2 text-white text-lg md:bg-transparent md:p-0 dark:text-white hover:text-red-700"
+                >
+                  <span className="text-red-700">02. </span>Work
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block pr-2 text-white text-lg md:bg-transparent md:p-0 dark:text-white hover:text-red-700"
+                >
+                  <span className="text-red-700">03. </span>Contact
+                </a>
+              </li>
+              <li>
+                <button className="block py-1 px-4 mt-[-3px] text-white text-lg md:bg-transparent dark:text-white border border-red-700 hover:bg-red-700 transition ease-in-out text-center">
+                  Resume
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    );
+  }
+}
