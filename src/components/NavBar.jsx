@@ -46,7 +46,7 @@ export default class NavBar extends Component {
                   href="#"
                   className="block pr-2 text-white text-lg md:bg-transparent md:p-0 hover:text-red-700"
                 >
-                  <span className="text-red-700">02. </span>Work
+                  <span className="text-red-700">02. </span>Experience
                 </a>
               </li>
               <li>

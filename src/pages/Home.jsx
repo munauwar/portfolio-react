@@ -4,7 +4,7 @@ export default class Home extends Component {
   render() {
     return (
       <section className="bg-gray-800">
-        <div className="max-w-screen-xl px-4 mx-auto lg:gap-8 py-80">
+        <div className="max-w-screen-xl px-4 mx-auto lg:gap-8 pt-60 pb-60">
           <div className="mr-auto place-self-center lg:col-span-7">
             <p className="max-w-2xl font-mono mb-2 text-red-700 md:text-lg lg:text-2xl">
               Hi, my name is
