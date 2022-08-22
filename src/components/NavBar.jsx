@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class NavBar extends Component {
   render() {
     return (
-      <nav className="md:px-11 px-4 py-4 bg-gray-800">
+      <nav className="md:px-11 px-4 py-4 bg-gray-800 sticky top-0 shadow-xl ">
         <div className="flex flex-wrap justify-between items-center lg:mx-20">
           <p className="flex items-center">
             <span className="self-center text-2xl font-mono whitespace-nowrap text-white">
@@ -17,7 +17,7 @@ export default class NavBar extends Component {
           >
             <span className="sr-only">Open main menu</span>
             <svg
-              className="w-6 h-6"
+              class="w-6 h-6"
               aria-hidden="true"
               fill="currentColor"
               viewBox="0 0 20 20"

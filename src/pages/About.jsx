@@ -20,7 +20,7 @@ export default class About extends Component {
               because of the interest in front-end and back-end. Here are a few
               technologies I've working with recently:
             </p>
-            <ul class="list-disc mt-5 ml-5 marker:text-red-700">
+            <ul className="list-disc mt-5 ml-5 marker:text-red-700">
               <li>Javascript</li>
               <li>React</li>
               <li>Vue</li>
