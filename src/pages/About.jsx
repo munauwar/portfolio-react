@@ -9,7 +9,7 @@ export default class About extends Component {
             <span className="font-mono text-red-700">01. </span>About me
             <hr className="w-1/4 inline-block pt-1 border-red-500 ml-2" />
           </div>
-          <div className="text-gray-400 md:w-1/2 block mt-5 float-left text-justify">
+          <div className="text-gray-400 md:w-1/2 block mt-5 float-left text-justify font-mono">
             Hello! My name is Munauwar and I enjoy creating things that live on
             the internet. I am a well-organised, problem solver, independent
             person with high attention to detail. I am someone who is every day

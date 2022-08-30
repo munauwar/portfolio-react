@@ -26,10 +26,10 @@ export default class Timeline extends Component {
                   Latest
                 </time>
                 <div className="font-mono text-gray-500">
-                  <span className="font-bold text-base text-black">
+                  <span className="font-bold text-base text-black selection:text-red-700">
                     Hogeschool van Amsterdam
                   </span>
-                  <p className="text-xs italic">Software Engineer student</p>
+                  <p className="text-xs italic selection:text-red-700">Software Engineer student</p>
                 </div>
               </div>
               <div className="p-3 text-base font-normal text-black bg-gray-50 rounded-lg border border-gray-200">
@@ -89,10 +89,10 @@ export default class Timeline extends Component {
             <div className="p-4 bg-white rounded-lg border border-gray-200 ml-7">
               <div className="justify-between items-center mb-3 sm:flex">
                 <div className="font-mono text-gray-500">
-                  <span className="font-bold text-base text-black">
+                  <span className="font-bold text-base text-black selection:text-red-700">
                     INFO B.V.
                   </span>
-                  <p className="text-sm italic">
+                  <p className="text-xs italic selection:text-red-700">
                     Backend-end developer, Intern 2020
                   </p>
                 </div>
@@ -123,10 +123,10 @@ export default class Timeline extends Component {
             <div className="p-4 bg-white rounded-lg border border-gray-200 ml-7">
               <div className="justify-between items-center mb-3 sm:flex">
                 <div className="font-mono text-gray-500">
-                  <span className="font-bold text-base text-black">
+                  <span className="font-bold text-base text-black selection:text-red-700">
                     Batavia Groep
                   </span>
-                  <p className="text-sm italic">
+                  <p className="text-xs italic selection:text-red-700">
                     Front-end developer, Intern 2018
                   </p>
                 </div>
