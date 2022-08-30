@@ -4,16 +4,16 @@ export default class Timeline extends Component {
   render() {
     return (
       <>
-        <ol className="border-l border-gray-200 mt-5 ml-2">
+        <ol className="border-l border-gray-200 mt-5">
           <li className="mb-10">
-            <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white">
+            <span className="absolute ml-[-10px] justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6"
+                className="w-6 h-6"
               >
                 <path
                   stroke-linecap="round"
@@ -31,7 +31,7 @@ export default class Timeline extends Component {
                   <span className="font-bold text-base text-black">
                     Hogeschool van Amsterdam
                   </span>
-                  <p className="text-sm">Software Engineer student</p>
+                  <p className="text-xs italic">Software Engineer student</p>
                 </div>
               </div>
               <div className="p-3 text-base font-normal text-black bg-gray-50 rounded-lg border border-gray-200">
@@ -41,15 +41,15 @@ export default class Timeline extends Component {
             </div>
           </li>
 
-          <li className="mb-10 ml-6">
-            <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white">
+          <li className="mb-10">
+            <span className="absolute ml-[-10px] justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6"
+                className="w-6 h-6 overflow-hidden"
               >
                 <path
                   stroke-linecap="round"
@@ -58,13 +58,13 @@ export default class Timeline extends Component {
                 />
               </svg>
             </span>
-            <div className="p-4 bg-white rounded-lg border border-gray-200">
+            <div className="p-4 bg-white rounded-lg border border-gray-200 ml-7">
               <div className="justify-between items-center mb-3 sm:flex">
                 <div className="font-mono text-gray-500">
-                  <span className="font-bold text-base text-black">
+                  <span className="font-bold text-base text-black selection:text-red-700">
                     De Justitiële ICT Organisatie
                   </span>
-                  <p className="text-sm">Front-end developer, Intern 2022</p>
+                  <p className="text-xs italic selection:text-red-700">Front-end developer, Intern 2022</p>
                 </div>
               </div>
               <div className="p-3 text-base font-normal text-black bg-gray-50 rounded-lg border border-gray-200">
@@ -74,15 +74,15 @@ export default class Timeline extends Component {
             </div>
           </li>
 
-          <li className="mb-10 ml-6">
-            <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white">
+          <li className="mb-10">
+            <span className="absolute ml-[-10px] justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6"
+                className="w-6 h-6"
               >
                 <path
                   stroke-linecap="round"
@@ -91,13 +91,13 @@ export default class Timeline extends Component {
                 />
               </svg>
             </span>
-            <div className="p-4 bg-white rounded-lg border border-gray-200">
+            <div className="p-4 bg-white rounded-lg border border-gray-200 ml-7">
               <div className="justify-between items-center mb-3 sm:flex">
                 <div className="font-mono text-gray-500">
                   <span className="font-bold text-base text-black">
                     INFO B.V.
                   </span>
-                  <p className="text-sm">Backend-end developer, Intern 2020</p>
+                  <p className="text-sm italic">Backend-end developer, Intern 2020</p>
                 </div>
               </div>
               <div className="p-3 text-base font-normal text-black bg-gray-50 rounded-lg border border-gray-200">
@@ -108,15 +108,15 @@ export default class Timeline extends Component {
             </div>
           </li>
 
-          <li className="ml-6">
-            <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white">
+          <li className="mb-10">
+            <span className="absolute ml-[-10px] justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6"
+                className="w-6 h-6"
               >
                 <path
                   stroke-linecap="round"
@@ -125,13 +125,13 @@ export default class Timeline extends Component {
                 />
               </svg>
             </span>
-            <div className="p-4 bg-white rounded-lg border border-gray-200">
+            <div className="p-4 bg-white rounded-lg border border-gray-200 ml-7">
               <div className="justify-between items-center mb-3 sm:flex">
                 <div className="font-mono text-gray-500">
                   <span className="font-bold text-base text-black">
                     Batavia Groep
                   </span>
-                  <p className="text-sm">Front-end developer, Intern 2018</p>
+                  <p className="text-sm italic">Front-end developer, Intern 2018</p>
                 </div>
               </div>
               <div className="p-3 text-base font-normal text-black bg-gray-50 rounded-lg border border-gray-200">
