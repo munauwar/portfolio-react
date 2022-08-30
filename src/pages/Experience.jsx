@@ -12,6 +12,20 @@ export default class Experience extends Component {
           </div>
           <Timeline />
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0f0302"
+            fill-opacity="1"
+            d="M0,0L1440,224L1440,320L0,320Z"
+          ></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0f0302"
+            fill-opacity="1"
+            d="M0,0L1440,224L1440,0L0,0Z"
+          ></path>
+        </svg>
       </div>
     );
   }

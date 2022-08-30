@@ -17,7 +17,7 @@ export default class NavBar extends Component {
           >
             <span className="sr-only">Open main menu</span>
             <svg
-              class="w-6 h-6"
+              className="w-6 h-6"
               aria-hidden="true"
               fill="currentColor"
               viewBox="0 0 20 20"
@@ -58,9 +58,13 @@ export default class NavBar extends Component {
                 </a>
               </li>
               <li>
-                <button className="block py-1 px-4 mt-[-3px] text-white text-lg md:bg-transparent border border-red-700 hover:bg-red-700 transition ease-in-out">
+                <a
+                  href="../public/documents/cv.pdf"
+                  download
+                  className="block py-1 px-4 mt-[-3px] text-white text-lg md:bg-transparent border border-red-700 hover:bg-red-700 transition ease-in-out"
+                >
                   Resume
-                </button>
+                </a>
               </li>
             </ul>
           </div>

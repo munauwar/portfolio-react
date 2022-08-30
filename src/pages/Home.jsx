@@ -4,7 +4,7 @@ export default class Home extends Component {
   render() {
     return (
       <section className="bg-gray-800">
-        <div className="max-w-screen-xl px-4 mx-auto lg:gap-8 pt-52 lg:pb-80 pb-72">
+        <div className="max-w-screen-xl px-4 mx-auto lg:gap-8 pt-52">
           <div className="mr-auto place-self-center lg:col-span-7">
             <p className="max-w-2xl font-mono mb-2 text-red-700 md:text-lg lg:text-2xl">
               Hi, my name is
@@ -23,6 +23,20 @@ export default class Home extends Component {
             Contact me.
           </button>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0f0302"
+            fill-opacity="1"
+            d="M0,0L1440,224L1440,320L0,320Z"
+          ></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0f0302"
+            fill-opacity="1"
+            d="M0,0L1440,224L1440,0L0,0Z"
+          ></path>
+        </svg>
       </section>
     );
   }

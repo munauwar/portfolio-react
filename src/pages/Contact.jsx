@@ -4,7 +4,7 @@ export default class extends Component {
   render() {
     return (
       <div className="bg-gray-800">
-        <div className="max-w-screen-lg px-4 mx-auto py-20 overflow-hidden pb-40">
+        <div className="max-w-screen-lg px-4 mx-auto overflow-hidden pb-20">
           <div className="text-white text-2xl text-center">
             <h2 className="font-mono text-red-700">03. What's next?</h2>
           </div>
@@ -29,7 +29,7 @@ export default class extends Component {
             className="block mx-auto mt-10 py-3 px-5 border border-red-700 text-white hover:bg-red-700 transition-colors font-mono uppercase"
             onClick={() => (window.location = "mailto:mughal.m@outlook.com")}
           >
-            Contact me.
+            Say Hello.
           </button>
         </div>
       </div>
