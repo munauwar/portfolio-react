@@ -17,7 +17,7 @@ export default class Home extends Component {
             </p>
           </div>
           <button
-            className="py-3 px-5 border border-red-700 text-white hover:bg-red-700 transition-colors font-mono uppercase"
+            className="py-3 px-5 border border-red-700 text-white hover:bg-red-700 transition-colors font-mono uppercase mb-7"
             onClick={() => (window.location = "mailto:mughal.m@outlook.com")}
           >
             Contact me.
@@ -25,16 +25,9 @@ export default class Home extends Component {
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
-            fill="#0f0302"
+            fill="#f3f4f5"
             fill-opacity="1"
-            d="M0,0L1440,224L1440,320L0,320Z"
-          ></path>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#0f0302"
-            fill-opacity="1"
-            d="M0,0L1440,224L1440,0L0,0Z"
+            d="M0,32L1440,192L1440,320L0,320Z"
           ></path>
         </svg>
       </section>
