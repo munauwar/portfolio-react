@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class About extends Component {
   render() {
     return (
-      <div className="dark-red" style={{ backgroundColor: "#330a00" }}>
+      <div className="bg-dark-red">
         <div className="max-w-screen-xl px-4 mx-auto overflow-hidden">
           <div className="text-white text-2xl">
             <span className="font-mono text-red-700">01. </span>About me
