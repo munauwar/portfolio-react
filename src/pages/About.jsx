@@ -3,8 +3,8 @@ import React, { Component } from "react";
 export default class About extends Component {
   render() {
     return (
-      <div className="dark-red" style={{backgroundColor: "#330a00"}}>
-        <div className="max-w-screen-xl px-4 mx-auto pb-40 overflow-hidden">
+      <div className="dark-red" style={{ backgroundColor: "#330a00" }}>
+        <div className="max-w-screen-xl px-4 mx-auto overflow-hidden">
           <div className="text-white text-2xl">
             <span className="font-mono text-red-700">01. </span>About me
             <hr className="w-1/4 inline-block pt-1 border-red-500 ml-2" />
