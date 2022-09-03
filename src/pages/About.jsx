@@ -3,13 +3,13 @@ import React, { Component } from "react";
 export default class About extends Component {
   render() {
     return (
-      <div className="bg-gray-800">
-        <div className="max-w-screen-xl px-4 mx-auto py-20 pb-40 overflow-hidden">
+      <div className="dark-red" style={{backgroundColor: "#330a00"}}>
+        <div className="max-w-screen-xl px-4 mx-auto pb-40 overflow-hidden">
           <div className="text-white text-2xl">
             <span className="font-mono text-red-700">01. </span>About me
             <hr className="w-1/4 inline-block pt-1 border-red-500 ml-2" />
           </div>
-          <div className="text-gray-400 md:w-1/2 block mt-5 float-left text-justify font-mono">
+          <div className="text-white md:w-1/2 block mt-5 float-left text-justify font-mono">
             Hello! My name is Munauwar and I enjoy creating things that live on
             the internet. I am a well-organised, problem solver, independent
             person with high attention to detail. I am someone who is every day
@@ -20,7 +20,7 @@ export default class About extends Component {
               because of the interest in front-end and back-end. Here are a few
               technologies I've working with recently:
             </p>
-            <ul className="list-disc mt-5 ml-5 marker:text-red-700">
+            <ul className="list-disc mt-5 ml-5 marker:text-white">
               <li>Javascript</li>
               <li>React</li>
               <li>Vue</li>

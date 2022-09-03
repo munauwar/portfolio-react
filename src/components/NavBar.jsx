@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { motion } from "framer-motion";
 
 export default class NavBar extends Component {
   render() {
@@ -6,9 +7,14 @@ export default class NavBar extends Component {
       <nav className="md:px-11 px-4 py-4 bg-gray-800 sticky top-0 shadow-xl ">
         <div className="flex flex-wrap justify-between items-center lg:mx-20">
           <p className="flex items-center">
-            <span className="self-center text-2xl font-mono whitespace-nowrap text-white">
+            <motion.span
+              className="self-center text-2xl font-mono whitespace-nowrap text-white"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
+            >
               M. Mughal
-            </span>
+            </motion.span>
           </p>
           <button
             data-collapse-toggle="navbar-default"
