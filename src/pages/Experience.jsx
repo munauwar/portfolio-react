@@ -4,7 +4,7 @@ import Timeline from "../components/Timeline";
 export default class Experience extends Component {
   render() {
     return (
-      <div className="bg-gray-800">
+      <div id="experience" className="bg-gray-800">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#330a00"

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class extends Component {
   render() {
     return (
-      <div className="bg-dark-red">
+      <div id="contact" className="bg-dark-red">
         <div className="max-w-screen-lg px-4 mx-auto overflow-hidden pb-40 pt-20">
           <div className="text-white text-2xl text-center">
             <h2 className="font-mono text-red-700">03. What's next?</h2>
