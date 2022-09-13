@@ -72,10 +72,8 @@ export default function NavBar() {
             </li>
             <li>
               <a
-                href="../public/documents/cv.pdf"
-                download
-                onClick={closeMobileMenu}
-                className="block w-1/5 md:w-full py-1 px-4 mt-[-3px] text-white text-lg md:bg-transparent border border-red-700 hover:bg-red-700 transition ease-in-out"
+                onClick={() => (window.location = "https://www.linkedin.com/in/munauwar-mughal/")}
+                className="block w-2/4 text-center mt-2 md:w-full py-1 px-4 md:mt-[-3px] text-white text-lg md:bg-transparent border border-red-700 hover:bg-red-700 transition ease-in-out"
               >
                 Resume
               </a>

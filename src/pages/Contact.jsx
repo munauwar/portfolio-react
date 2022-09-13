@@ -18,7 +18,7 @@ export default class extends Component {
             <p className="text-xs mt-2">
               PS: I will reply faster via my{" "}
               <a
-                href="https://www.linkedin.com/in/munauwar-mughal/"
+                onClick={() => (window.location = "https://www.linkedin.com/in/munauwar-mughal/")}
                 className="underline"
               >
                 LinkedIn.
