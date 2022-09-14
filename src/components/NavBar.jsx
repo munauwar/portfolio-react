@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
 
 export default function NavBar() {
@@ -16,7 +16,7 @@ export default function NavBar() {
             className="self-center text-2xl font-mono whitespace-nowrap text-white"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 1 }}
+            transition={{ duration: 1.2 }}
           >
             M. Mughal
           </motion.span>
@@ -40,44 +40,67 @@ export default function NavBar() {
             ></path>
           </svg>
         </button>
-        <div className={click ? "hidden md:block md:w-auto" : "w-full h-screen"}>
+        <div
+          className={click ? "hidden md:block md:w-auto" : "w-full h-screen"}
+        >
           <ul className="flex flex-col p-4 mt-[50%] rounded-lg md:flex-row md:space-x-8 md:mt-0 md:font-medium md:border-0 font-mono">
-            <li>
+            <motion.li
+              initial={{ y: -250 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 1.2 }}
+            >
               <HashLink
-                smooth to="#about"
+                smooth
+                to="#about"
                 onClick={closeMobileMenu}
                 className="block text-white text-lg md:bg-transparent md:p-0 hover:text-red-700"
                 aria-current="page"
               >
                 <span className="text-red-700">01. </span>About
               </HashLink>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              initial={{ y: -250 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 1.4 }}
+            >
               <HashLink
-                smooth to="#experience"
+                smooth
+                to="#experience"
                 onClick={closeMobileMenu}
                 className="block pr-2 text-white text-lg md:bg-transparent md:p-0 hover:text-red-700"
               >
                 <span className="text-red-700">02. </span>Experience
               </HashLink>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              initial={{ y: -250 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 1.6 }}
+            >
               <HashLink
-                smooth to="#contact"
+                smooth
+                to="#contact"
                 onClick={closeMobileMenu}
                 className="block pr-2 text-white text-lg md:bg-transparent md:p-0 hover:text-red-700"
               >
                 <span className="text-red-700">03. </span>Contact
               </HashLink>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li 
+              initial={{ y: -250 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 1.8 }}>
               <a
-                onClick={() => (window.location = "https://www.linkedin.com/in/munauwar-mughal/")}
+                onClick={() =>
+                  (window.location =
+                    "https://www.linkedin.com/in/munauwar-mughal/")
+                }
                 className="block w-2/4 text-center mt-2 md:w-full py-1 px-4 md:mt-[-3px] text-white text-lg md:bg-transparent border border-red-700 hover:bg-red-700 transition ease-in-out"
               >
                 Resume
               </a>
-            </li>
+            </motion.li>
           </ul>
         </div>
       </div>
