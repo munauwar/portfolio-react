@@ -30,7 +30,7 @@ export default class About extends Component {
             </ul>
           </div>
           <img
-            className="lg:pl-20 mt-[-65px] rounded mx-auto"
+            className="lg:pl-20 mt-[-65px] rounded mx-auto pb-6"
             src="./images/image-removedbg.png"
             alt="profilepic"
           />

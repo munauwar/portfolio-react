@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { motion } from "framer-motion";
+import DarkToggle from "../components/DarkToggle";
 
 export default class Home extends Component {
   render() {
     return (
-      <section className="bg-gray-800">
+      <section className="bg-gray-800 dark:bg-white transition">
         <div className="max-w-screen-xl px-4 mx-auto lg:gap-8 pt-52">
           <motion.div
             className="mr-auto place-self-center lg:col-span-7"
@@ -15,7 +16,7 @@ export default class Home extends Component {
             <p className="max-w-2xl font-mono mb-2 text-red-700 md:text-lg lg:text-2xl">
               Hi, my name is
             </p>
-            <h1 className="text-white max-w-2xl mb-4 text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight leading-none">
+            <h1 className="text-white max-w-2xl mb-4 text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight leading-none dark:text-black">
               Munauwar Mughal.
             </h1>
             <p className="text-white max-w-2xl mb-4 text-4xl md:text-5xl xl:text-5xl font-extrabold leading-none">
@@ -32,6 +33,7 @@ export default class Home extends Component {
             Contact me.
           </motion.button>
         </div>
+        <DarkToggle />
         <svg
           id="about"
           xmlns="http://www.w3.org/2000/svg"
