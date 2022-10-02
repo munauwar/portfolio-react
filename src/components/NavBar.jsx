@@ -9,11 +9,11 @@ export default function NavBar() {
   const closeMobileMenu = () => setClick(true);
 
   return (
-    <nav className="md:px-11 px-4 py-4 bg-gray-800 sticky top-0 shadow-xl ">
+    <nav className="md:px-11 px-4 py-4 bg-gray-800 sticky top-0 shadow-xl dark:bg-slate-300">
       <div className="flex flex-wrap justify-between items-center lg:mx-20">
         <p className="flex items-center">
           <motion.span
-            className="self-center text-2xl font-mono whitespace-nowrap text-white"
+            className="self-center text-2xl font-mono whitespace-nowrap text-white dark:text-black"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.2 }}
@@ -70,7 +70,7 @@ export default function NavBar() {
                 smooth
                 to="#about"
                 onClick={closeMobileMenu}
-                className="block text-white text-lg md:bg-transparent md:p-0 hover:text-red-700"
+                className="block text-white text-lg md:bg-transparent md:p-0 hover:text-red-700 dark:text-black dark:hover:text-red-700"
                 aria-current="page"
               >
                 <span className="text-red-700">01. </span>About
@@ -85,7 +85,7 @@ export default function NavBar() {
                 smooth
                 to="#experience"
                 onClick={closeMobileMenu}
-                className="block pr-2 text-white text-lg md:bg-transparent md:p-0 hover:text-red-700"
+                className="block pr-2 text-white text-lg md:bg-transparent md:p-0 hover:text-red-700 dark:text-black dark:hover:text-red-700"
               >
                 <span className="text-red-700">02. </span>Experience
               </HashLink>
@@ -99,7 +99,7 @@ export default function NavBar() {
                 smooth
                 to="#contact"
                 onClick={closeMobileMenu}
-                className="block pr-2 text-white text-lg md:bg-transparent md:p-0 hover:text-red-700"
+                className="block pr-2 text-white text-lg md:bg-transparent md:p-0 hover:text-red-700 dark:text-black dark:hover:text-red-700"
               >
                 <span className="text-red-700">03. </span>Contact
               </HashLink>
@@ -114,7 +114,7 @@ export default function NavBar() {
                   (window.location =
                     "https://www.linkedin.com/in/munauwar-mughal/")
                 }
-                className="block w-2/4 text-center mt-2 md:w-full py-1 px-4 md:mt-[-3px] text-white text-lg md:bg-transparent border border-red-700 hover:bg-red-700 transition ease-in-out"
+                className="block w-2/4 text-center mt-2 md:w-full py-1 px-4 md:mt-[-3px] text-white text-lg md:bg-transparent border border-red-700 hover:bg-red-700 transition ease-in-out dark:text-black cursor-pointer"
               >
                 Resume
               </a>
