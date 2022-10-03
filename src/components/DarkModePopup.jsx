@@ -2,11 +2,14 @@ import React from "react";
 import DarkToggle from "../components/DarkToggle";
 
 export default function DarkModePopup() {
-    const [colorTheme, setTheme] = DarkToggle();
+  const [colorTheme, setTheme] = DarkToggle();
 
   return (
     <div
-      className="cursor-pointer bottom-0 right-0 mb-8 overflow-hidden p-3 bg-black text-white w-1/12 fixed rounded-lg float-right mr-4 text-center animate-bounce dark:bg-white dark:text-black"
+      className="cursor-pointer bottom-0 right-0 mb-8 overflow-hidden border border-white 
+      p-3 bg-black text-white fixed rounded-lg float-right mr-4 text-center animate-bounce 
+      w-[30%] sm:w-1/5 md:w-1/6 lg:w-[12%]
+      dark:bg-white dark:text-black dark:border dark:border-black"
       onClick={() => setTheme(colorTheme)}
     >
       {colorTheme === "dark" ? (
