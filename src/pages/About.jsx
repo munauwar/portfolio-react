@@ -29,7 +29,7 @@ export default class About extends Component {
               <li>Java</li>
             </ul>
           </div>
-          <div className="pb-6 lg:pl-20 mt-[-275px]">
+          <div className="pb-6 lg:pl-20 mt-[-250px]">
             <img
               src="./images/portret-removebg.png"
               className="shadow rounded border-none mx-auto"
