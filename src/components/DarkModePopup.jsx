@@ -14,7 +14,7 @@ export default function DarkModePopup() {
     >
       {colorTheme === "dark" ? (
         <>
-          <span>To dark?</span>
+          <span>Too dark?</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -32,7 +32,7 @@ export default function DarkModePopup() {
         </>
       ) : (
         <>
-          <span>To light?</span>
+          <span>Too light?</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

@@ -8,12 +8,12 @@ export default function Home() {
     <section className="bg-gray-800 dark:bg-stone-400">
       <div className="max-w-screen-xl px-4 mx-auto lg:gap-8 pt-52">
         <motion.div
-          className="mr-auto place-self-center lg:col-span-7"
+          className="mx-auto lg:col-span-7"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1.5 }}
         >
-          <p className="max-w-2xl font-mono mb-2 text-red-700 md:text-lg lg:text-2xl">
+          <p className="max-w-2xl font-mono mb-2 text-red-700 md:text-lg lg:text-2xl opacity-40 bg-gradient-to-b">
             Hi, my name is
           </p>
           <h1 className="text-white max-w-2xl mb-4 text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight leading-none dark:text-black">

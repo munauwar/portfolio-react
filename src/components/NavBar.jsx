@@ -9,7 +9,7 @@ export default function NavBar() {
   const closeMobileMenu = () => setClick(true);
 
   return (
-    <nav className="md:px-11 px-4 py-4 bg-gray-800 sticky top-0 shadow-xl dark:bg-slate-300">
+    <nav className="md:px-11 px-4 py-4 bg-gray-800 sticky top-0 shadow-xl bg-gradient-to-t z-50 dark:bg-slate-300 dark:transition">
       <div className="flex flex-wrap justify-between items-center lg:mx-20">
         <p className="flex items-center">
           <motion.span
