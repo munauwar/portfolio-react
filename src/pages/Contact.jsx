@@ -7,10 +7,10 @@ export default class extends Component {
       <div id="contact" className="bg-dark-red dark:bg-slate-300">
         <motion.div
           className="max-w-screen-lg px-4 mx-auto overflow-hidden pb-40 pt-20"
-          initial={{ y: 400 }}
-          whileInView={{ y: 0 }}
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, type: "tweeen" }}
+          transition={{ duration: 0.7, delay: 0.3 }}
         >
           <div className="text-white text-2xl text-center">
             <h2 className="font-mono text-red-700">03. What's next?</h2>

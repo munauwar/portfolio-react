@@ -12,7 +12,7 @@ export default class About extends Component {
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.3 }}
         >
-          <div className="text-white text-2xl dark:text-black">
+          <div className="text-white text-2xl dark:text-black mt-36 md:mt-0">
             <span className="font-mono text-red-700">01. </span>About me
             <hr className="w-1/4 inline-block pt-1 border-red-500 ml-2" />
           </div>

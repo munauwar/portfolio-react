@@ -6,7 +6,7 @@ export default function Home() {
 
   return (
     <section className="bg-gray-800 dark:bg-stone-400">
-      <div className="max-w-screen-xl px-4 mx-auto lg:gap-8 pt-52">
+      <div className="max-w-screen-xl px-4 mx-auto lg:gap-8 pt-52 pb-24 md:pb-0">
         <motion.div
           className="mx-auto lg:col-span-7"
           initial={{ opacity: 0 }}
