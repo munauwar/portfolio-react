@@ -1,15 +1,22 @@
 import React, { Component } from "react";
+import { motion } from "framer-motion";
 
 export default class About extends Component {
   render() {
     return (
       <div className="bg-dark-red dark:bg-slate-300">
-        <div className="max-w-screen-xl px-4 mx-auto overflow-hidden">
+        <motion.div
+          className="max-w-screen-xl px-4 mx-auto overflow-hidden"
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+        >
           <div className="text-white text-2xl dark:text-black">
             <span className="font-mono text-red-700">01. </span>About me
             <hr className="w-1/4 inline-block pt-1 border-red-500 ml-2" />
           </div>
-          <div className="text-white md:w-1/2 block mt-5 float-left text-justify font-mono dark:text-black">
+          <div className="text-white lg:w-1/2 block mt-5 float-left text-justify font-mono dark:text-black">
             Hello! My name is Munauwar and I enjoy creating things that live on
             the internet. I am a well-organised, problem solver, independent
             person with high attention to detail. I am someone who is every day
@@ -36,7 +43,7 @@ export default class About extends Component {
               alt="profilepic"
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     );
   }

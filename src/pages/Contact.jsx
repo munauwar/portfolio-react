@@ -1,10 +1,17 @@
 import React, { Component } from "react";
+import { motion } from "framer-motion";
 
 export default class extends Component {
   render() {
     return (
       <div id="contact" className="bg-dark-red dark:bg-slate-300">
-        <div className="max-w-screen-lg px-4 mx-auto overflow-hidden pb-40 pt-20">
+        <motion.div
+          className="max-w-screen-lg px-4 mx-auto overflow-hidden pb-40 pt-20"
+          initial={{ y: 400 }}
+          whileInView={{ y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, type: "tweeen" }}
+        >
           <div className="text-white text-2xl text-center">
             <h2 className="font-mono text-red-700">03. What's next?</h2>
           </div>
@@ -18,7 +25,10 @@ export default class extends Component {
             <p className="text-xs mt-2">
               PS: I will reply faster via my{" "}
               <a
-                onClick={() => (window.location = "https://www.linkedin.com/in/munauwar-mughal/")}
+                onClick={() =>
+                  (window.location =
+                    "https://www.linkedin.com/in/munauwar-mughal/")
+                }
                 className="underline"
               >
                 LinkedIn.
@@ -31,7 +41,7 @@ export default class extends Component {
           >
             Say Hello.
           </button>
-        </div>
+        </motion.div>
       </div>
     );
   }

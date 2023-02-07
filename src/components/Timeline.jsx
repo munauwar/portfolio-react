@@ -1,11 +1,18 @@
 import React, { Component } from "react";
+import { motion } from "framer-motion";
 
 export default class Timeline extends Component {
   render() {
     return (
       <>
         <ol className="border-l border-gray-200 mt-5 ml-2">
-          <li className="mb-10">
+          <motion.li
+            className="mb-10"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -29,16 +36,24 @@ export default class Timeline extends Component {
                   <span className="font-bold text-base text-white selection:text-red-700 dark:text-black">
                     Hogeschool van Amsterdam
                   </span>
-                  <p className="text-xs italic selection:text-red-700 dark:text-gray-700">Software Engineer student</p>
+                  <p className="text-xs italic selection:text-red-700 dark:text-gray-700">
+                    Software Engineer student
+                  </p>
                 </div>
               </div>
               <div className="p-3 text-base font-normal text-black bg-gray-400 rounded-lg">
                 After 4 years of studying I finally got my bachelor's degree.
               </div>
             </div>
-          </li>
+          </motion.li>
 
-          <li className="mb-10">
+          <motion.li
+            className="mb-10"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -69,9 +84,15 @@ export default class Timeline extends Component {
                 application with Vue.js and TailwindCSS.
               </div>
             </div>
-          </li>
+          </motion.li>
 
-          <li className="mb-10">
+          <motion.li
+            className="mb-10"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -103,9 +124,15 @@ export default class Timeline extends Component {
                 for this.
               </div>
             </div>
-          </li>
+          </motion.li>
 
-          <li className="mb-10">
+          <motion.li
+            className="mb-10"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.8 }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -137,7 +164,7 @@ export default class Timeline extends Component {
                 javascript.
               </div>
             </div>
-          </li>
+          </motion.li>
         </ol>
       </>
     );
